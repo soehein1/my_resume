@@ -3,21 +3,17 @@ import SideBar from './components/SideBar'
 import React from 'react'
 import Main from './components/Main'
 import getData from './static/data'
-import { useEffect, useState } from 'react'
 
 
 function App() {
-  const [data, setData] = useState({})
+  const data = getData('section')
+  const skill = getData('skills')
 
-  useEffect(() => {
-    setData(getData())
-  }, [])
 
-  
   return (
     <div className='App'>
       <SideBar />
-      <Main data={data} />
+      <Main data={data} skill = {skill} />
     </div>
   )
 }
