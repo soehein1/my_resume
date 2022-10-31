@@ -1,8 +1,52 @@
-.App{
-    background-color: rgb(4, 69, 69);
-    padding: 10px;
-    width:1000px;
-    display: grid;
-    grid-template-columns: 300px auto;
+@keyframes anim-experience {
+    from {
+        top: 200px;
+        left: 200px;
+    }
+
+    to {
+        top: 0px;
+        left: 0px;
+    }
+}
+@keyframes anim-skill{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+.App {
+    height: 1000px;
+}
+
+.body {
+    width: 1000px;
     margin: auto;
+    display: flex;
+    margin-top: 5px;
+
+}
+
+.main {
+    width: 75%;
+    margin-left: 5px;
+    
+}
+
+.experience-section {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: auto;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    animation-name: anim-experience;
+    animation-duration: 2s;
+}
+.skill-section{
+    margin: 5px;
+    padding: 20px;
+    border: 2px dashed green;
+    opacity: 1;
+    animation-name: anim-skill;
+    animation-duration: 4s;
 }

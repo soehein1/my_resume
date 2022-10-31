@@ -1,20 +1,9 @@
 import React from 'react'
-import '../static/css/SideBar.css'
-import profilepic from '../static/img/profile_pic.jpg'
-function SideBar() {
-    return (
-        <div className='sidebar'>
-            <div className='logo'>
-
-                <img className='img' src={profilepic} alt='sohile' />
-            </div>
-            <div className='item'>Social Network</div>
-            <div className='item'></div>
-            <div className='item'>Social Network</div>
-            <div className='item'>Social Network</div>
-
-        </div>
-    )
+import '../static/css/Sidebar.css'
+function Sidebar() {
+  return (
+    <div className='sidebar-container'>Lights, snow, but above all the markets: Bolzano is the ideal place to totally immerse yourself in the Christmas atmosphere. South Tyrol is the perfect place for mountain lovers and nature lovers with its natural landscapes and fantastic ski slopes.</div>
+  )
 }
 
-export default SideBar
+export default Sidebar

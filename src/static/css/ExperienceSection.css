@@ -1,0 +1,19 @@
+
+
+.experience-container{
+    border:2px solid green;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0px 5px;
+    box-shadow: 1px 1px;
+}
+.item-name{
+    color: green;
+    border-bottom: 2px solid green;
+}
+.event{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    padding: 10px 0px;
+}
